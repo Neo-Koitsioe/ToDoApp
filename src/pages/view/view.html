@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="background: #a1b176">
+      My Tasks
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="view">
+
+  <ion-list>
+    <ion-item *ngFor = "let Task of TaskList">
+        {{Task.name}}<br>
+        <p>{{Task.date}}</p>
+        <p>{{Task.time}}</p> 
+    </ion-item>
+  </ion-list>
+
+
+  <button ion-button round full (click)="onClick()">+ Add a task</button>
+
+</ion-content>

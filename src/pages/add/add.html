@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Task</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="content">
+    <ion-list>
+
+        <ion-item>
+          <ion-label fixed>Name:</ion-label>
+          <ion-input type="text" [(ngModel)] = "name"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed>Date</ion-label>
+          <ion-input type="date" placeholder = "" [(ngModel)] = "date"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Time</ion-label>
+            <ion-input type="time" placeholder = "" [(ngModel)] = "time"></ion-input>
+        </ion-item>
+
+        
+        
+    
+      
+      </ion-list>
+      <button ion-button round (click)="onClick()" style="left: 12%;">CONFIRM</button>
+      <button ion-button round (click)="cancel()" style="left: 12%;">CANCEL</button>
+      
+
+</ion-content>
